@@ -5,22 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap"
       rel="stylesheet"
     />
+
     <title>Rock Paper Scissors</title>
   </head>
   <body>
     <section class="psrGame">
-        <div class="container">
-            <div class="psrGame__scoreboard">
-                <div class="psrGame__title"></div>
-                
-            </div>
+      <div class="container">
+        <div class="psrGame__scoreboard">
+          <figure class="psrGame__titleImg">
+            <img src="./assets/title.png" alt="Title Image" />
+          </figure>
+          <div class="psrGame__score">
+            <p>SCORE</p>
+            <h1 class="psrGame__userScore">0</h1>
+          </div>
         </div>
+
+        <div class="psrGame__signs">
+            <div class="psrGame__paper"></div>
+        </div>
+
+      </div>
     </section>
   </body>
 </html>
