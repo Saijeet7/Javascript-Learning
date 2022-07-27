@@ -83,3 +83,55 @@ body {
 .psrGame__scissors {
   margin-left: 20px;
 }
+
+.psrGame__contest {
+  width: 900px;
+  display: flex;
+  margin-top: 50px;
+}
+
+.psrGame__contest > div {
+  flex: 1;
+}
+
+.psrGame__contest .psrGame__handImg {
+  display: flex;
+  justify-content: center;
+}
+
+.psrGame__subHead {
+  color: white;
+  font-size: 20px;
+  margin: 20px 0 50px 0;
+  text-align: center;
+}
+
+.psrGame__handImg img {
+  width: 275px;
+  height: 275px;
+}
+
+.psrGame__refree {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.psrGame__decision > .psrGame__subHead {
+  font-size: 56px;
+}
+
+.psrGame__newGame {
+  background: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: hsl(229deg, 25%, 31%);
+  transition: all 0.15s;
+}
+
+.psrGame__newGame:hover {
+  background: bisque;
+  transform: translate3d(0px, -2px, 0px);
+}

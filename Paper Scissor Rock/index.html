@@ -30,17 +30,44 @@
 
         <div class="psrGame__signs">
             <figure class="hand psrGame__paper">
-                <img src="./assets/Paper.png" alt="Paper Image" />
+                <img src="./assets/Paper.png" alt="Paper Image" onclick="pickUserHand('paper')"/>
             </figure>
             <figure class="hand psrGame__scissors">
-                <img src="./assets/Scissors.png" alt="Scissors Image" />
+                <img src="./assets/Scissors.png" alt="Scissors Image" onclick="pickUserHand('scissors')"/>
             </figure>
             <figure class="hand psrGame__rock">
-                <img src ="./assets/Rock.png" alt="Rock Image"/>
+                <img src ="./assets/Rock.png" alt="Rock Image" onclick="pickUserHand('rock')"/>
             </figure>
+        </div>
+
+        <div class="psrGame__contest">
+            <div class="psrGame__userHand">
+                <h2 class="psrGame__subHead">YOU PICKED</h2>
+                <figure class="psrGame__handImg">
+                    <img src="./assets/Paper.png" alt="User Choice"/>
+                </figure>
+            </div>
+
+            <div class="psrGame__refree">
+                <div class="psrGame__decision">
+                    <h2 class="psrGame__subHead">YOU WIN</h2>
+                </div>
+                <div class="psrGame__newGame">
+                    Play Again
+                </div>
+            </div>
+
+            <div class="psrGame__userHand">
+                <h2 class="psrGame__subHead">THE HOUSE PICKED</h2>
+                <figure class="psrGame__handImg">
+                    <img src="./assets/Scissors.png" alt="Computer Choice"/>
+                </figure>
+            </div>
         </div>
 
       </div>
     </section>
+
+    <script src="./js/index.js"></script>
   </body>
 </html>
