@@ -55,3 +55,31 @@ body {
   color: #565468;
   font-size: 56px;
 }
+
+.psrGame__signs {
+  width: 476px;
+  height: 430px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  background: url(../assets/triangle.png) no-repeat center;
+}
+
+.psrGame__signs .hand {
+  cursor: pointer;
+}
+
+.psrGame__signs .hand:hover {
+  transform: translate3d(0px, -8px, 0px);
+  transition: all 0.25s;
+}
+
+.psrGame__paper {
+  margin-right: 20px;
+}
+
+.psrGame__scissors {
+  margin-left: 20px;
+}
