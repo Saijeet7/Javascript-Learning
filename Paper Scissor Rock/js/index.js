@@ -7,7 +7,6 @@ const handOptions = {
 let score = 0;
 
 const pickUserHand = (hand) => {
-  console.log(hand);
   let hands = document.querySelector(".psrGame__signs");
   hands.style.display = "none";
 
@@ -67,6 +66,15 @@ const setDecision = (decision) => {
 };
 
 const setScore = (SCORE) => {
-  console.log(SCORE);
-  console.log("Hello Form Score");
+    score = SCORE;
+    document.querySelector(".psrGame__score h1").innerText = SCORE;
 };
+
+const restartGame = () => {
+    let hands = document.querySelector(".psrGame__signs");
+    hands.style.display = "flex";
+  
+    let contest = document.querySelector(".psrGame__contest");
+    contest.style.display = "none";
+
+}
