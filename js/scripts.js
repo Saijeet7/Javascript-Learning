@@ -171,3 +171,37 @@ document.getElementById("btn").addEventListener("click", (e) => {
   document.getElementById("output").innerHTML = getDetails();
 });
 
+// Classes before ES6
+
+// Initialize an Item Class
+
+function Item(name, category) {
+  this.name = name;
+  this.category = category;
+}
+
+// Create a method called getDetails() for an Item
+Item.prototype.getDetails = function () {
+  return `${this.name} - ${this.category}`;
+};
+
+//Initialize a PurchasedItem class, inherits the Item Class
+function PurchasedItem(name, category, price) {
+  Item.call(this, name, category);
+  this.price = price;
+}
+
+//set the inherited methos and properties of the base class
+PurchasedItem.prototype = Object.create(Item.prototype);
+PurchasedItem.prototype.constructor = PurchasedItem;
+
+// Creates a new method just for the extended PurchasedItem class
+PurchasedItem.prototype.getDetailsWithPrice = function () {
+  return `${this.name} - ${this.category} - $${this.price}`;
+};
+
+var item = new item('Coffee', 'Food');
+item.category = 'Drinks';
+
+var purchasedItem = new PurchasedItem('Sugar','Food', '2.49');
+document.getElementById('output').innerHTML = purchasedItem.getDetailsWithPrice();
